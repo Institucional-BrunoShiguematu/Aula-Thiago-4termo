@@ -14,6 +14,10 @@ const routes: Routes = [
   path: 'ex1',
   loadChildren: () => import('./ex1/ex1-module').then(m => m.Ex1Module)
 },
+{
+  path: 'lista2',
+  loadChildren: () => import('./listadeexercicio2/listadeexercicio2-module').then(m => m.Listadeexercicio2Module)
+}
 
 
 ];

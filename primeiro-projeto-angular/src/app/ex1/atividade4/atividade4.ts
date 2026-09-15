@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './atividade4.css',
 })
 export class Atividade4 {
-  formularioValido: boolean = false;
+  formularioValido: boolean = true;
 }

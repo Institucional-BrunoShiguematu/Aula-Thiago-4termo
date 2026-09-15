@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="submit" placeholder="Enviar" [disabled]='formularioValido'>
+    <p *ngIf="mostrarMensagem">Seja bem-vindo ao programa!</p>
+    <button (click)="alterarBotao()">Aparecer/Omitir Mensagem</button>
 </body>
 </html>

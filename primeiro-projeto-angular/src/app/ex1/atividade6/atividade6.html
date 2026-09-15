@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="submit" placeholder="Enviar" [disabled]='formularioValido'>
+    <p>Quantidade: {{contador}}</p>
+    <button (click)="add()">+</button><br>
+    <button (click)="minus()" [disabled]='botaoValido'>-</button><br>
+
 </body>
 </html>
