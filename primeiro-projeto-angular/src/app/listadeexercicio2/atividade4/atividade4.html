@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+  Produtos disponíveis:
+  <br><span *ngIf="estoque > 0; else nenhum">{{ produto }} | Estoque: ({{ estoque }})</span>
+</p>
+
+<p>
+  Produtos indisponíveis:
+  <br><span *ngIf="estoque <= 0; else nenhum">{{ produto }}</span>
+</p>
+
+<ng-template #nenhum>
+  <span></span>
+</ng-template>
+
+<p>
+  <button (click)="add()">Adicionar produto</button>
+  <button (click)="minus()" [disabled]="statusBotao">Remover produto</button>
+</p>
+
+</body>
+</html>

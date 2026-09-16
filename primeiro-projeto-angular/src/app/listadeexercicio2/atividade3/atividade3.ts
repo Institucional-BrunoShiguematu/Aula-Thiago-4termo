@@ -12,15 +12,15 @@ export class Atividade3 {
 
   add(){
     this.classificacao++;
-    this.verificarStatusBotao();
+    this.verificarStatusBotao()
   }
   minus(){
-    this.classificacao = this.classificacao - 1;
-    this.verificarStatusBotao();
+    this.classificacao = this.classificacao - 1
+    this.verificarStatusBotao()
   }
 
   verificarStatusBotao(){
-    if(this.classificacao === 0){
+    if(this.classificacao = 0){
       this.statusBotao = true;
     }else{
       this.statusBotao = false;
