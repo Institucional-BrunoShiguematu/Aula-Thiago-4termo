@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p *ngFor="let nome of nomes; let i = index; let primeiro = first; let ultimo = last">
+        <b> {{ i + 1 }}. {{ nome }}</b>
+        <span *ngIf="primeiro"> - Primeiro da Lista</span>
+        <span *ngIf="ultimo"> - Último da Lista</span>
+
+    </p>
+
+</body>
+</html>
