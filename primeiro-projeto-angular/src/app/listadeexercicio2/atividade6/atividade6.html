@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button (click)="tirar()" [disabled] = "nomes.length === 0">Tirar Último</button>
+    <button (click)="removerTudo()" [disabled] = "nomes.length === 0">Apagar Tudo</button>
+    <button (click)="restaurar()" [disabled] = "nomes.length > 1">Restaurar Lista</button>
+
+    <div *ngFor="let nome of nomes; let i = index; let primeiro = first; let ultimo = last">
+        <b> {{ i + 1 }}. {{ nome }}</b>
+        <span *ngIf="nome.length != 0">
+            <span *ngIf="primeiro"> - Primeiro da Lista</span>
+            <span *ngIf="ultimo"> - Último da Lista</span>
+        
+        </span>
+        
+    </div>
+
+    <p *ngIf="nomes.length === 0"><b>Nenhum nome na Lista</b></p>
+
+</body>
+</html>
