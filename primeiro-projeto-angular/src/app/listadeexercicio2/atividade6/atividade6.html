@@ -10,18 +10,22 @@
     <button (click)="tirar()" [disabled] = "nomes.length === 0">Tirar Último</button>
     <button (click)="removerTudo()" [disabled] = "nomes.length === 0">Apagar Tudo</button>
     <button (click)="restaurar()" [disabled] = "nomes.length > 1">Restaurar Lista</button>
-
+    <p></p>
     <div *ngFor="let nome of nomes; let i = index; let primeiro = first; let ultimo = last">
+        
         <b> {{ i + 1 }}. {{ nome }}</b>
-        <span *ngIf="nome.length != 0">
+    
+        <span *ngIf="nomes.length > 1">
             <span *ngIf="primeiro"> - Primeiro da Lista</span>
             <span *ngIf="ultimo"> - Último da Lista</span>
-        
         </span>
+
+        <span *ngIf="nomes.length === 1"> - Único nome na lista</span>
         
     </div>
-
+    
+    
     <p *ngIf="nomes.length === 0"><b>Nenhum nome na Lista</b></p>
-
+    <ng-template #unico> Unico</ng-template>
 </body>
 </html>
