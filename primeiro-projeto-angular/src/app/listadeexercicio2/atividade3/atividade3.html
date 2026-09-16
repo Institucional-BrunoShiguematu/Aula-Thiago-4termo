@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Idade Atual: {{classificacao}}</p>
+    <p *ngIf="classificacao < 12 ">Criança</p>
+    <p *ngIf="classificacao >= 12 && classificacao <=17">Adolescente</p>
+    <p *ngIf="classificacao >17 && classificacao <=59 ">Adulto</p>
+    <p *ngIf="classificacao >= 60 ">Idoso</p>
+
+    <button (click)="add()">Adicionar idade</button>
+    <button (click)="minus()" [disabled]="statusBotao">Diminuir idade</button>
+
+</body>
+</html>
