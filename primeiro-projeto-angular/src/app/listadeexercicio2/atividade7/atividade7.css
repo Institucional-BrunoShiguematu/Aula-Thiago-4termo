@@ -1,0 +1,4 @@
+.par {background-color: blue; color: aliceblue;}
+.impar{background-color: red; color: aliceblue;}
+.primeiro{font-weight: bold; color: rgb(17, 255, 0);}
+.ultimo{border: 3px solid black;}

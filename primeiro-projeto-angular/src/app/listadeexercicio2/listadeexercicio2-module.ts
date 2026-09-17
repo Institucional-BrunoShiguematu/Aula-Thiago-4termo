@@ -8,9 +8,18 @@ import { Atividade3 } from './atividade3/atividade3';
 import { Atividade4 } from './atividade4/atividade4';
 import { Atividade5 } from './atividade5/atividade5';
 import { Atividade6 } from './atividade6/atividade6';
+import { Atividade7 } from './atividade7/atividade7';
 
 @NgModule({
-  declarations: [Atividade1, Atividade2, Atividade3, Atividade4, Atividade5, Atividade6],
+  declarations: [
+    Atividade1,
+    Atividade2,
+    Atividade3,
+    Atividade4,
+    Atividade5,
+    Atividade6,
+    Atividade7,
+  ],
   imports: [CommonModule, Listadeexercicio2RoutingModule],
 })
 export class Listadeexercicio2Module {}
