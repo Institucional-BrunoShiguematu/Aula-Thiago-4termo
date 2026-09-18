@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade11.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <button (click)="alterarVisibilidade()">{{somenteDisponiveis ? 'Exibir Disponíveis' : 'Exibir Todos'}}</button>
+
+   <table>
+    <thead>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Preço</th>
+    <th>Estoque</th>
+    </thead>
+
+    <tbody>
+    <ng-container *ngFor="let produto of produtos; let i = index">
+        <tr *ngIf=" somenteDisponiveis || produto.quantidade > 0" class="lista">
+            <td>{{produto.id}}</td>
+            <td>{{produto.nome}}</td>
+            <td>{{produto.preco}}</td>
+            <td>{{produto.quantidade}}</td>
+        </tr>
+    </ng-container>
+    </tbody>
+</table>
+
+</body>
+</html>
