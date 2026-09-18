@@ -14,6 +14,7 @@ import { Atividade8 } from './atividade8/atividade8';
 import { Atividade9 } from './atividade9/atividade9';
 import { Atividade10 } from './atividade10/atividade10';
 import { Atividade11 } from './atividade11/atividade11';
+import { Atividade12 } from './atividade12/atividade12';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { Atividade11 } from './atividade11/atividade11';
     Atividade9,
     Atividade10,
     Atividade11,
+    Atividade12,
   ],
   imports: [CommonModule, Listadeexercicio2RoutingModule, FormsModule],
 })

@@ -11,6 +11,7 @@ import { Atividade8 } from './atividade8/atividade8';
 import { Atividade9 } from './atividade9/atividade9';
 import { Atividade10 } from './atividade10/atividade10';
 import { Atividade11 } from './atividade11/atividade11';
+import { Atividade12 } from './atividade12/atividade12';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
    {path: 'atividade9', component: Atividade9},
    {path: 'atividade10', component: Atividade10},
    {path: 'atividade11', component: Atividade11},
+   {path: 'atividade12', component: Atividade12},
 ];
 
 @NgModule({

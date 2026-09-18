@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Cadastro de produtos</h2>
+
+<div class="formulario">
+  <input type="text" [(ngModel)]="nome" placeholder="Nome do produto">
+  <input type="number" [(ngModel)]="quantidade" placeholder="Quantidade">
+  <button (click)="cadastrar()">Cadastrar</button>
+</div>
+
+<p *ngIf="mensagem" class="erro">{{ mensagem }}</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Quantidade</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let produto of produtos; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ produto.nome }}</td>
+      <td>{{ produto.quantidade }}</td>
+      <td>
+        <button (click)="excluir(produto)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="produtos.length === 0">Nenhum produto cadastrado.</p>
+
+</body>
+</html>
