@@ -15,7 +15,6 @@ interface Produto {
   styleUrl: './atividade11.css',
 })
 export class Atividade11 {
-
   somenteDisponiveis: boolean = false;
 
   produtos: Produto[] = [

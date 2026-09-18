@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { Listadeexercicio2RoutingModule } from './listadeexercicio2-routing-module';
 import { Atividade1 } from './atividade1/atividade1';
@@ -28,6 +29,6 @@ import { Atividade11 } from './atividade11/atividade11';
     Atividade10,
     Atividade11,
   ],
-  imports: [CommonModule, Listadeexercicio2RoutingModule],
+  imports: [CommonModule, Listadeexercicio2RoutingModule, FormsModule],
 })
 export class Listadeexercicio2Module {}
