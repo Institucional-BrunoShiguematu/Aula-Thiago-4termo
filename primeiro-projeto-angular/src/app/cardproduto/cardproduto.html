@@ -1,9 +1,9 @@
 <body>
     
-    <div class="cardProduto">
-        <p>{{nome}}</p>
-        <p>{{preco | currency:'BRL'}}</p>
-        <p>{{disponivel ? 'Disponível' : 'Indisponível'}}</p>
+    <div class="card">
+        <p class="status" [ngClass]="disponivel ? 'disponivel' : 'indisponivel'">{{nome}}</p>
+        <p class="status" [ngClass]="disponivel ? 'disponivel' : 'indisponivel'">{{preco | currency:'BRL'}}</p>
+        <p class="status" [ngClass]="disponivel ? 'disponivel' : 'indisponivel'">{{disponivel ? 'Disponível' : 'Indisponível'}}</p>
 
     </div>
 

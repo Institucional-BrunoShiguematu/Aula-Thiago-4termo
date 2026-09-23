@@ -1,9 +1,10 @@
 <app-cabecalho [loja]='cabecalhoLoja'></app-cabecalho>
 <h1>Página Principal</h1>
 
-<app-cardproduto [nome]='nomeProduto1' [preco]='valorProduto1' [disponivel]='disponivelProduto1'></app-cardproduto>
-<app-cardproduto [nome]='nomeProduto2' [preco]='valorProduto2' [disponivel]='disponivelProduto2'></app-cardproduto>
-<app-cardproduto [nome]='nomeProduto3' [preco]='valorProduto3' [disponivel]='disponivelProduto3'></app-cardproduto>
-
+<div class="container-cards">
+    <app-cardproduto [nome]='nomeProduto1' [preco]='valorProduto1' [disponivel]='disponivelProduto1'></app-cardproduto>
+    <app-cardproduto [nome]='nomeProduto2' [preco]='valorProduto2' [disponivel]='disponivelProduto2'></app-cardproduto>
+    <app-cardproduto [nome]='nomeProduto3' [preco]='valorProduto3' [disponivel]='disponivelProduto3'></app-cardproduto>
+</div>
 
 <router-outlet />
